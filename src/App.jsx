@@ -9,11 +9,11 @@ function App() {
  
 
   return (
-     <>
+     <div className="container mx-auto">
       <Header />
       <Formulario />
       <ListadoPacientes />
-     </>
+     </div>
 
 
       )
