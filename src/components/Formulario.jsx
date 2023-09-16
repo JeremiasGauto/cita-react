@@ -1,6 +1,6 @@
 import {useState,useEffect } from 'react';
 
-function Formulario() {
+function Formulario({pacientes,setPacientes}) {
   
   const [nombre, setNombre] = useState('');
   const [propietario, setPropietario] = useState('');
@@ -9,6 +9,8 @@ function Formulario() {
   const [sintoma, setSintoma] = useState('');
 
   const [error, setError] = useState(false)
+
+  
 
 
   const handleSubmit = (e) => {
@@ -19,6 +21,27 @@ function Formulario() {
       return;
     }
     setError(false)
+
+    //objeto pacientes
+    const objetoPaciente = {
+      nombre,
+      propietario,
+      email,
+      fecha,
+      sintoma
+    }
+    setPacientes([...pacientes, objetoPaciente]);
+
+    //reinciar el formulario
+    setNombre('');
+    setPropietario('');
+    setEmail('');
+    setFecha('');
+    setSintoma('');
+
+
+
+
   }
 
 
