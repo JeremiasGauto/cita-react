@@ -1,8 +1,10 @@
-import React from 'react'
 import Paciente from './Paciente'
 
-function ListadoPacientes({ pacientes }) {
+
+
+function ListadoPacientes({ pacientes, setPaciente }) {
   
+
 
   return (
 
@@ -19,7 +21,10 @@ function ListadoPacientes({ pacientes }) {
                     {pacientes.map((paciente) => (
                       <Paciente
                         key = {paciente.id}
-                        paciente={paciente} />
+                        paciente={paciente}
+                        setPaciente={setPaciente}
+                      />
+                      
                     ))}
             </>
 
