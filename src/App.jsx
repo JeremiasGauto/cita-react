@@ -21,7 +21,8 @@ function App() {
         <Formulario
           pacientes={pacientes}
           setPacientes={setPacientes}
-          paciente = {paciente}
+          paciente={paciente}
+          setPaciente= {setPaciente}
           
         />
         <ListadoPacientes
