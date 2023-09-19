@@ -140,7 +140,7 @@ function Formulario({pacientes,setPacientes, paciente}) {
           <div className="mb-5">
           <label className="block text-gray-700 uppercase font-bold" htmlFor="email">Sintomas</label>
           <textarea
-            name=""
+            className="w-full border-2 "
             id="sintomas"
             value={sintoma} 
             onChange={(e) => setSintoma(e.target.value)}
