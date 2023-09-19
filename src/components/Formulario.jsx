@@ -5,7 +5,7 @@ function Formulario({pacientes,setPacientes, paciente, setPaciente}) {
   
   const [nombre, setNombre] = useState('');
   const [propietario, setPropietario] = useState('');
-  const [email, setEmail] = useState('alguien@alguien.com');
+  const [email, setEmail] = useState('');
   const [fecha, setFecha] = useState('');
   const [sintoma, setSintoma] = useState('');
 
